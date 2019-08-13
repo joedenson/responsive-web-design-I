@@ -1,3 +1,487 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* Set every element's box-sizing to border-box */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+        /* Index.html styles*/
+        /* container wrapper*/
+        
+        .wrapper {
+            /* width: 100%; */
+            margin: 0 10% 0 10%;
+        }
+        /* nav bar and logo styles*/
+        
+        nav {
+            margin-top: 45px;
+        }
+        
+        nav a {
+            color: gray;
+            text-decoration: none;
+            /* margin-top: 1%; */
+        }
+        
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nav-links {
+            width: 80%;
+            margin-top: 1%;
+        }
+        
+        .nav-links a {
+            margin-right: 10%;
+        }
+        /* Header styles*/
+        
+        .title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin: 5% 0 0 0;
+        }
+        
+        .titleDiv {
+            display: flex;
+            text-align: center;
+            width: 20%;
+            margin-right: 40%;
+            justify-content: space-around;
+            font-size: 90px;
+        }
+        
+        .titleDiv h1 {
+            text-align: center;
+            width: 20%;
+        }
+        
+        .get-started {
+            margin-left: 10%;
+            margin-bottom: 40px;
+        }
+        
+        button:hover {
+            background-color: blue;
+        }
+        /* section styles*/
+        
+        span.feats {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        span.about {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .middle-img {
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .sec1 {
+            display: flex;
+            border-top: 2px solid black;
+        }
+        
+        .sec2 {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+        }
+        
+        .sec2 p {
+            margin-bottom: 20px;
+            width: 97%;
+        }
+        
+        .section1 {
+            display: flex;
+            width: 33%;
+        }
+        
+        h3 {
+            margin-top: 20px;
+        }
+        
+        address {
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+        /* Footer styles*/
+        
+        footer {
+            text-align: center;
+            margin-top: 5%;
+        }
+        /* Services.html page styles */
+        /*Establish page container width*/
+        
+        .wrapper2 {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        /* Header styles*/
+        
+        .services-header-img {
+            width: 100%;
+        }
+        
+        .services-h2 {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        
+        .header-border-bottom {
+            border-bottom: 1px solid black;
+        }
+        
+        .header-border-bottom p {
+            margin-bottom: 20px;
+        }
+        /* Main section styles*/
+        
+        .h3 {
+            margin-left: 15px;
+        }
+        
+        #lasth3 {
+            margin-left: -1px;
+        }
+        
+        #section1 {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            text-align: left;
+            /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+        }
+        
+        #section1 .main-sec {
+            width: 49%;
+            background-color: lightblue;
+            border: 1px solid black;
+            margin-bottom: 25px;
+        }
+        
+        #section1 .main-sec a {
+            display: block;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            width: 20%;
+            padding: 7px 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-style: bold;
+            text-align: center;
+        }
+        
+        #section1 h3 {
+            margin-left: 15px;
+        }
+        
+        #section1 p {
+            margin: 0 5px;
+        }
+        
+        #section2 {
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid black;
+            padding-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        /* Bottom section styles*/
+        
+        .last-sec {
+            width: 49%;
+        }
+        
+        .last-img {
+            width: 49%;
+        }
+        
+        .services-info-img {
+            width: 100%;
+            height: 75%;
+        }
+        
+        ul {
+            margin-top: 20px;
+        }
+        
+        ul li {
+            list-style-type: square;
+            margin-left: 20px;
+            margin-bottom: 25px;
+        }
+        
+        footer {
+            text-align: center;
+        }
+        /************MEDIA QUERIES***********/
+        
+        @media screen and (max-width: 800px) {
+            .nav-wrap {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .nav-links {
+                display: flex;
+                justify-content: space-between;
+                margin-left: 7%;
+            }
+            .nav-img {
+                text-align: center;
+                padding-bottom: 5%;
+            }
+            .title {
+                display: flex;
+                width: 100%;
+            }
+            .title h1 {
+                margin-right: 38%;
+            }
+            .title img {
+                display: none;
+            }
+            .titleDiv {
+                display: flex;
+                text-align: center;
+                width: 50%;
+                justify-content: space-between;
+                margin-left: 35%;
+                margin-top: 10%;
+            }
+            .titleDiv h1 {
+                text-align: center;
+                width: 100%;
+            }
+            .get-started {
+                margin-left: 25%;
+            }
+            .sec2 p {
+                width: 80%;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            /* body {
+                width: 100vw;
+            } */
+            .nav-wrap {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                width: 100vw;
+            }
+            .nav-links a {
+                border-bottom: 1px solid gray;
+                border-top: 1px solid gray;
+                width: 100vw;
+                text-align: center;
+                padding: 3%;
+            }
+            .title h1 {
+                margin-top: 10%;
+                font-size: 60px;
+            }
+            .get-started {
+                margin-top: 5%;
+                margin-left: 22%;
+            }
+            .sec1 {
+                display: flex;
+                flex-direction: column;
+            }
+            .sec2 {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+            }
+            .titleDiv {
+                display: flex;
+                text-align: center;
+                width: 50%;
+                justify-content: space-between;
+                margin-left: 35%;
+            }
+            .titleDiv h1 {
+                text-align: center;
+                width: 100%;
+            }
+            footer {
+                margin-top: 5%;
+            }
+        }
